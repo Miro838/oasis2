@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="home">
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="IMAGES/download.png" alt="Profile Picture" class="profile-img">
+                <h1>Hello, I'm [Your Name]</h1>
+                <p>Web Developer & Designer</p>
+                <button onclick="scrollToSection('about')">Learn More</button>
+            </div>
+        </section>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer with a strong background in creating visually appealing and functional websites.
+             My experience includes working with various web technologies and designing user-centric interfaces.</p>
+        
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <p>Building responsive and modern websites.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Creating interactive and dynamic web applications.</p>
+            </div>
+            <div class="skill">
+                <h3>PHP</h3>
+                <p>Creating interactive and dynamic BAckend Functionalities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">App</button>
+            <!-- Add more filters as needed -->
+        </div>
+        <div class="project-list">
+            <div class="project-card web">
+                <img src="IMAGES/Screenshot (104).png" alt="Project 1">
+                <img src="IMAGES/Screenshot (105).png" alt="Project 1">
+                <img src="IMAGES/Screenshot (106).png" alt="Project 1">
+                <img src="IMAGES/Screenshot (108).png" alt="Project 1">
+                <h3>Slack landing page</h3>
+                <p>The Slack landing page project features a modern and engaging design aimed at promoting Slak, 
+                    a team collaboration tool. It includes a header with navigation links and a sign-up button,
+                     a hero section with a welcome message and key features, a features section detailing core functionalities 
+                     like real-time messaging and task management, a testimonials section showcasing user feedback, and a contact
+                      form for inquiries. The footer provides social media links and copyright information, while a modal offers
+                       an additional sign-up prompt. The page uses responsive design principles and Font Awesome icons to enhance
+                        visual appeal and usability.</p>
+            </div>
+            <div class="project-card app">
+                <img src="IMAGES/Screenshot (109).png" alt="Project 2">
+                <h3>Temperature Converter </h3>
+                <p>The Temperature Converter project is a web-based application that allows users to convert temperatures between
+                     Celsius, Fahrenheit, and Kelvin. The interface features a clean design with an input field for temperature entry
+                     , a dropdown menu for selecting the temperature unit, and a "Convert" button to trigger the conversion. 
+                     The application displays the current time and provides real-time temperature conversion results in the selected
+                      unit. It includes functionality for updating the time every second and calculates and displays the equivalent
+                       temperatures in other units based on user input.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
